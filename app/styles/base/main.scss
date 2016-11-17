@@ -137,6 +137,25 @@ body {
 .fund-list ul>li>ul>li>ul>li>div:first-child{
   padding-left: 100px;
 }
+.fund-list table tr {
+  border-bottom: 1px solid #dddddd;
+}
+.fund-list table tr td {
+  height:30px;
+}
+.fund-list table tr th {
+  height:35px;
+  background-color: #f9f9f9;
+}
+.fund-list>table tr>th:first-child {
+  padding-left: 15px;
+}
+.fund-list>table>tbody>tr>td:first-child {
+  padding-left: 15px;
+}
+.fund-list table tbody>tr:nth-child(even){
+  background-color: #f9f9f9;
+}
 .height-30{
   height: 30px;
 }

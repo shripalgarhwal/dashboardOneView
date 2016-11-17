@@ -218,13 +218,13 @@
         }*/
         vm.valideOverrideBox = function(items) {            
             if(items.override && items.error === 0 && items.warning === 0) {
-                return 'col-md-2 box-success width-30-per';
+                return 'pad-left-5 box-success';
             } else if(!items.override && items.error === 0 && items.warning === 0) {
-                return 'col-md-2 box-success width-30-per';
+                return 'pad-left-5 box-success';
             } else if(items.override && (items.error !== 0 || items.warning !== 0)) {
-                return 'col-md-2 box-override width-30-per';
+                return 'pad-left-5 box-override';
             } else {
-                return 'col-md-2 box-danger width-30-per'
+                return 'pad-left-5 box-danger'
             }
         }
         vm.detailVisible = false;
