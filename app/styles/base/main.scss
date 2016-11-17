@@ -167,6 +167,12 @@ body {
 .width-32-per{
   width: 32%;
 }
+.width-30-per{
+  width: 30%;
+}
+.width-3-per{
+  width: 3%;
+}
 .nav-pills>li>a{
   border-radius: 4px 4px 0px 0px;
 }
@@ -183,4 +189,7 @@ body {
 }
 .mouse-p{
   cursor: pointer;
+}
+.red{
+  background-color: #ebccd1 !important;
 }

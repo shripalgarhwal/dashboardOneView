@@ -99,41 +99,152 @@
 
 
         // ---  ui-grid ------
+
+        function getClassName(grid, row, col, columnName, CONSTANTS) {
+            var className = "";
+            //console.log('columnName::::', columnName);
+            if(columnName === 'isin') {
+
+            }
+            if(columnName === 'nav') {
+
+            }
+            if(columnName === 'currency') {
+
+            }
+            if(columnName === 'coreHoldingID') {
+
+            }
+            if(columnName === 'poe') {
+
+            }
+            if (grid.getCellValue(row, col).length === 0) {
+                className = "red";
+            }
+            //if (row.entity[columnName].type === MY_CONSTANTS.EDIT && grid.getCellValue(row, col) < 0) {
+            //    className = "red";
+            //}
+
+            return className;
+        }
         vm.gridOptions = {
                             enableSorting: true,
                             enableFiltering: true,
                             enableGridMenu: true,
                             enablePinning:true,
+                            useExternalFiltering: true,
                             columnDefs: [
                                 { 
                                     field: 'Name',
-                                    enablePinning: false
+                                    enablePinning: false,
+                                    enableFiltering: true,
+                                    menuItems: [
+                                                  /*{
+                                                    title: 'Outer Scope Alert',
+                                                    icon: 'ui-grid-icon-info-circled',
+                                                    action: function($event) {
+                                                        //console.log('this.context::::', this.context);
+                                                      //this.context.blargh(); // $scope.blargh() would work too, this is just an example
+                                                    },
+                                                    context: $scope
+                                                  },*/
+                                                  {
+                                                    title: 'Currency',
+                                                    action: function() {
+                                                        this.grid.options.data = filterInGrid(vm.selectedFundFamilly, 'currency');
+                                                    }
+                                                  },
+                                                  {
+                                                    title: 'ISIN',
+                                                    action: function() {
+                                                      //console.log('ISIN::::', this.columnName);
+                                                      this.grid.options.data = filterInGrid(vm.selectedFundFamilly, 'isin');
+                                                    }
+                                                  },
+                                                  {
+                                                    title: 'NAV',
+                                                    action: function() {
+                                                        this.grid.options.data = filterInGrid(vm.selectedFundFamilly, 'nav');
+                                                        //console.log('nav::::', this.grid.options);
+                                                    }
+                                                  },
+                                                  {
+                                                    title: 'Core Holding Id',
+                                                    action: function() {
+                                                        this.grid.options.data = filterInGrid(vm.selectedFundFamilly, 'coreHoldingID');
+                                                    }
+                                                  },
+                                                  {
+                                                    title: 'POE',
+                                                    action: function() {
+                                                      this.grid.options.data = filterInGrid(vm.selectedFundFamilly, 'poe');
+                                                    }
+                                                  },
+                                                  {
+                                                    title: 'Show All',
+                                                    action: function() {
+                                                      this.grid.options.data = filterInGrid(vm.selectedFundFamilly, 'showAll');
+                                                    }
+                                                  }
+                                                ]
                                 },
                                 {
-                                    field: 'currency', 
-                                    enablePinning:true
+                                    field: 'currency',
+                                    enableFiltering: false,
+                                    enablePinning:true,
+                                    cellClass: function(grid, row, col, rowRenderIndex, colRenderIndex) {
+                                        return 'other-cells ' + getClassName(grid, row, col, 'currency');
+                                    }
                                 },
                                 {
                                     field: 'isin',
                                     enableSorting: false, 
                                     enableFiltering: false,
-                                    enablePinning:true
+                                    enablePinning:true,
+                                    cellClass: function(grid, row, col, rowRenderIndex, colRenderIndex) {
+                                        return 'other-cells ' + getClassName(grid, row, col, 'isin');
+                                    }
                                 },
                                 {
                                     field: 'nav',
                                     enableFiltering: false,
-                                    enablePinning:true
+                                    enablePinning:true,
+                                    cellClass: function(grid, row, col, rowRenderIndex, colRenderIndex) {
+                                        return 'other-cells ' + getClassName(grid, row, col, 'nav');
+                                    }
                                 },
                                 {
                                     field: 'coreHoldingID',
-                                    enablePinning:true
+                                    enableFiltering: false,
+                                    enablePinning:true,
+                                    cellClass: function(grid, row, col, rowRenderIndex, colRenderIndex) {
+                                        return 'other-cells ' + getClassName(grid, row, col, 'coreHoldingID');
+                                    }
                                 },
                                 {
                                     field: 'poe',
                                     enableFiltering: false,
-                                    enablePinning:true
+                                    enablePinning:true,
+                                    cellClass: function(grid, row, col, rowRenderIndex, colRenderIndex) {
+                                        return 'other-cells ' + getClassName(grid, row, col, 'poe');
+                                    }
                                 }
                             ],
+                            /*onRegisterApi: function( gridApi ) {
+                                console.log('term111:::::');
+                                  $scope.gridApi = gridApi;
+                                    $scope.gridApi.core.on.filterChanged( $scope, function() {
+                                      var grid = this.grid;
+
+                                      if( grid.columns[1].filters[0].term === ' ' ) {
+                                        console.log('term:::::');
+                                        //$http.get('https://cdn.rawgit.com/angular-ui/ui-grid.info/gh-pages/data/100_male.json')
+                                        //.success(function(data) {
+                                          //$scope.gridOptions.data = data;
+                                        //});
+                                      }
+                                    });
+                            },*/
                             data: [
                                     { 
                                         Name: 'Category Name',
@@ -152,6 +263,20 @@
             } else {
             return '';
             }
+        }
+        function filterInGrid(arrayObj, field) {
+            var getData = [];
+            if(field === 'showAll') {
+                getData = arrayObj;
+            } else {
+                angular.forEach(arrayObj, function(value, key) {
+                    if(value[field] === '') {
+                        getData.push(value);
+                    }                
+                });
+            }
+            
+            return getData;            
         }
     }
 }());

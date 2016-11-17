@@ -11,16 +11,17 @@
         value="{{ctrl.comment.detail}}" ></textarea>
 </div>
 <div class="modal-footer">
-    <button 
+    <!--<button 
         class="btn btn-primary" 
         type="button" 
         ng-click="ctrl.editViewComment()">
         {{(ctrl.viewComment)?'Edit': 'View'}}
-    </button>
+    </button>-->
     <button 
         class="btn btn-primary" 
+        ng-if="!ctrl.viewComment"
         type="button" 
-        ng-click="ctrl.ok()">OK</button>
+        ng-click="ctrl.ok()">Submit</button>
     <button 
         class="btn btn-warning" 
         type="button" 

@@ -523,6 +523,11 @@
     "characteristics": [
       {
         "Name": "0201",
+        "currency": "USD$ 500",
+        "coreHoldingID": "567",
+        "poe": "",
+        "nav": "677",
+        "isin": "",
         "visible": {
           "error": false,
           "warning": false,
@@ -531,6 +536,11 @@
       },
       {
         "Name": "0682",
+        "currency": "USD$ 500",
+        "coreHoldingID": "",
+        "poe": "65",
+        "nav": "677",
+        "isin": "",
         "visible": {
           "error": false,
           "warning": false,
@@ -539,6 +549,11 @@
       },
       {
         "Name": "3T32",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "65",
+        "nav": "",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -547,6 +562,11 @@
       },
       {
         "Name": "6136",
+        "currency": "USD$ 500",
+        "coreHoldingID": "567",
+        "poe": "",
+        "nav": "",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -555,6 +575,11 @@
       },
       {
         "Name": "5991",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "65",
+        "nav": "",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -563,6 +588,11 @@
       },
       {
         "Name": "39V7",
+        "currency": "USD$ 500",
+        "coreHoldingID": "567",
+        "poe": "65",
+        "nav": "",
+        "isin": "",
         "visible": {
           "error": false,
           "warning": false,
@@ -571,6 +601,11 @@
       },
       {
         "Name": "4S97",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "",
+        "nav": "677",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -581,6 +616,11 @@
     "shareClass": [
       {
         "Name": "GBP Class S15 Accumulate Unhedged (489935)",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "65",
+        "nav": "",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -589,6 +629,11 @@
       },
       {
         "Name": "USD Class K Accumulate Unhedged (5825989)",
+        "currency": "USD$ 500",
+        "coreHoldingID": "",
+        "poe": "65",
+        "nav": "677",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -597,6 +642,11 @@
       },
       {
         "Name": "EUR Class F Distribute Unhedged (5843171)",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "65",
+        "nav": "677",
+        "isin": "",
         "visible": {
           "error": false,
           "warning": false,
@@ -607,6 +657,11 @@
     "nav": [
       {
         "Name": "IE0000710172",
+        "currency": "USD$ 500",
+        "coreHoldingID": "567",
+        "poe": "",
+        "nav": "",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -615,6 +670,11 @@
       },
       {
         "Name": "IE0002895195",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "65",
+        "nav": "677",
+        "isin": "",
         "visible": {
           "error": false,
           "warning": false,
@@ -623,6 +683,11 @@
       },
       {
         "Name": "IE0003110479",
+        "currency": "USD$ 500",
+        "coreHoldingID": "567",
+        "poe": "",
+        "nav": "",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -631,6 +696,11 @@
       },
       {
         "Name": "IE0003111113",
+        "currency": "",
+        "coreHoldingID": "",
+        "poe": "65",
+        "nav": "677",
+        "isin": "",
         "visible": {
           "error": false,
           "warning": false,
@@ -639,6 +709,11 @@
       },
       {
         "Name": "IE0004890525",
+        "currency": "USD$ 500",
+        "coreHoldingID": "567",
+        "poe": "65",
+        "nav": "",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -647,6 +722,11 @@
       },
       {
         "Name": "IE00B129GH09",
+        "currency": "",
+        "coreHoldingID": "",
+        "poe": "",
+        "nav": "677",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -657,6 +737,11 @@
     "holdings": [
       {
         "Name": "0201",
+        "currency": "USD$ 500",
+        "coreHoldingID": "567",
+        "poe": "65",
+        "nav": "",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -665,6 +750,11 @@
       },
       {
         "Name": "0682",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "",
+        "nav": "677",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -673,6 +763,11 @@
       },
       {
         "Name": "3T32",
+        "currency": "USD$ 500",
+        "coreHoldingID": "",
+        "poe": "65",
+        "nav": "677",
+        "isin": "",
         "visible": {
           "error": false,
           "warning": false,
@@ -681,6 +776,11 @@
       },
       {
         "Name": "6136",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "",
+        "nav": "677",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -689,6 +789,11 @@
       },
       {
         "Name": "5991",
+        "currency": "USD$ 500",
+        "coreHoldingID": "567",
+        "poe": "65",
+        "nav": "",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -697,6 +802,11 @@
       },
       {
         "Name": "39V7",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "",
+        "nav": "677",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -705,6 +815,11 @@
       },
       {
         "Name": "4S97",
+        "currency": "USD$ 500",
+        "coreHoldingID": "",
+        "poe": "65",
+        "nav": "677",
+        "isin": "",
         "visible": {
           "error": false,
           "warning": false,
@@ -715,6 +830,11 @@
     "distribution": [
       {
         "Name": "0201",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "65",
+        "nav": "",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -723,6 +843,11 @@
       },
       {
         "Name": "0682",
+        "currency": "USD$ 500",
+        "coreHoldingID": "",
+        "poe": "65",
+        "nav": "677",
+        "isin": "",
         "visible": {
           "error": false,
           "warning": false,
@@ -731,6 +856,11 @@
       },
       {
         "Name": "3T32",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "",
+        "nav": "",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -739,6 +869,11 @@
       },
       {
         "Name": "6136",
+        "currency": "USD$ 500",
+        "coreHoldingID": "",
+        "poe": "65",
+        "nav": "677",
+        "isin": "",
         "visible": {
           "error": false,
           "warning": false,
@@ -747,6 +882,11 @@
       },
       {
         "Name": "5991",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "",
+        "nav": "",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,
@@ -755,6 +895,11 @@
       },
       {
         "Name": "39V7",
+        "currency": "USD$ 500",
+        "coreHoldingID": "567",
+        "poe": "65",
+        "nav": "677",
+        "isin": "",
         "visible": {
           "error": false,
           "warning": false,
@@ -763,6 +908,11 @@
       },
       {
         "Name": "4S97",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "",
+        "nav": "",
+        "isin": "543",
         "visible": {
           "error": false,
           "warning": false,

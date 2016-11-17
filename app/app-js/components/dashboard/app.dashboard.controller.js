@@ -218,13 +218,13 @@
         }*/
         vm.valideOverrideBox = function(items) {            
             if(items.override && items.error === 0 && items.warning === 0) {
-                return 'col-md-4 box-success width-32-per';
+                return 'col-md-2 box-success width-30-per';
             } else if(!items.override && items.error === 0 && items.warning === 0) {
-                return 'col-md-4 box-success width-32-per';
+                return 'col-md-2 box-success width-30-per';
             } else if(items.override && (items.error !== 0 || items.warning !== 0)) {
-                return 'col-md-4 box-override width-32-per';
+                return 'col-md-2 box-override width-30-per';
             } else {
-                return 'col-md-4 box-danger width-32-per'
+                return 'col-md-2 box-danger width-30-per'
             }
         }
         vm.detailVisible = false;
@@ -247,6 +247,9 @@
             }            
         }
         vm.approveData = function(items, recentDate) {
+            vm.openCommentModal(items, recentDate, 'Edit');            
+        }
+        vm.submitApproval = function(items, recentDate) {
             items.approveDate = recentDate;
             //items.error = 0;
             //items.warning = 0;            
@@ -277,7 +280,7 @@
             });
             return visible;            
         }
-        vm.openCommentModal = function(item) {
+        vm.openCommentModal = function(item, recentDate, type) {
             var modalInstance = $uibModal.open({
                     ariaLabelledBy: 'modal-title',
                     ariaDescribedBy: 'modal-body',
@@ -288,12 +291,20 @@
                     resolve: {
                         item: function () {
                             return item;
+                        },
+                        recentDate: function() {
+                            return recentDate;
+                        },
+                        type: function() {
+                            return type;
                         }
                     }
                 });
 
-                modalInstance.result.then(function (selectedItem) {
-                  //$ctrl.selected = selectedItem;
+                modalInstance.result.then(function (selectedItem, recentDate, type) {
+                   if(selectedItem.type === 'Edit') {
+                        vm.submitApproval(selectedItem.item, selectedItem.recentDate);
+                    }                  
                 }, function () {
                   //$log.info('Modal dismissed at: ' + new Date());
                 });

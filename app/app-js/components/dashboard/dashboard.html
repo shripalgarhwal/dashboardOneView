@@ -143,7 +143,10 @@
 		   					class="col-md-2 margin-top-5"><b>Available As At Dates</b>
 		   				</div>
 		   				<div 
-		   					class="col-md-4 margin-top-5 width-32-per"><b>Data Quality</b>
+		   					class="col-md-3 margin-top-5 width-30-per"><b>Data Quality</b>
+		   				</div>
+		   				<div 
+		   					class="col-md-1 width-3-per padding-none margin-top-5 pad-left-5">&nbsp;
 		   				</div>
 		   				<div 
 		   					class="col-md-1 padding-none margin-top-5 pad-left-5"><b>NT Name</b>
@@ -179,7 +182,7 @@
 			   					ng-if="(items.error === 0 && items.warning === 0)">
 			   					<b>Data Quality: No Error, Warnings</b>	
 			   				</div>
-			   				<div class="col-md-8 padding-none margin-none"
+			   				<div class="col-md-9 padding-none margin-none"
 			   					ng-if="items.error !== 0 || items.warning !== 0">
 				   				<table>
 				   					<tr>
@@ -204,26 +207,34 @@
 				   				
 				   				
 			   				</div>
-			   				<div class="col-md-2 padding-none margin-none">
+			   				<!--<div class="col-md-2 padding-none margin-none">
 				   				<button
-				   					class="btn btn-default"><i class="fa fa-comments-o" aria-hidden="true"
+				   					class="btn btn-default"
+				   					title="Comment"><i class="fa fa-comments-o" aria-hidden="true"
 				   					style="color: #3c8dbc;"
 				   					ng-click="vm.openCommentModal(items)"></i></button>
-			   				 </div>
-			   				<div class="col-md-2 padding-none margin-none"
+			   				 </div>-->
+			   				<div class="col-md-1 padding-none margin-none"
 			   					ng-if="(!items.override && (items.error !== 0 && items.warning !== 0))">
 				   				<button
 				   					class="btn btn-default"
 				   				 ng-click="vm.approveData(items, items.recentDate)">Override</button>
 			   				 </div>
-			   				 <div class="col-md-2 padding-none margin-none"
+			   				 <div class="col-md-1 padding-none margin-none"
 			   					ng-if="(items.override && (items.error !== 0 || items.warning !== 0))">
 				   				<button
 				   					class="btn btn-default">Rollback</button>
 			   				 </div>
 			   			</div>
+			   			<div class="col-md-1 padding-none height-30 pad-left-5 width-3-per">
+			   				<button
+				   					class="btn btn-default"
+				   					title="Comment"><i class="fa fa-comments-o" aria-hidden="true"
+				   					style="color: #3c8dbc;"
+				   					ng-click="vm.openCommentModal(items)"></i></button>
+			   			</div>
 			   			<div class="col-md-1 padding-none margin-top-5 height-30 pad-left-5">
-			   				{{items.user}}
+			   				&nbsp;{{items.user}}
 			   			</div>
 			   		</li>			   		
 				</ul>
