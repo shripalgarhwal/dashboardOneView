@@ -158,7 +158,6 @@
                             enableFiltering: true,
                             enableGridMenu: true,
                             enablePinning:true,
-                            useExternalFiltering: true,
                             showTreeExpandNoChildren: true,
                             columnDefs: [
                                 { 
