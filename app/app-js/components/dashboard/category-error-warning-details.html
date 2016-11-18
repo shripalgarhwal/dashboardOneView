@@ -82,11 +82,13 @@
 	</uib-tab>-->
 	<uib-tab index="0" heading="View Details">
 		<div class="box box-primary col-md-12 padding-none margin-none">
+			<!--ui-grid-selection-->
 			<div 
 				ui-grid="vm.gridOptions" 
-				ui-grid-selection 
 				ui-grid-pinning 
-				class="grid">
+				class="grid"
+				ui-grid-tree-view
+				style="height: 480px;">
 			</div>
 		</div>		
 	</uib-tab>

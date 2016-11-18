@@ -6,6 +6,7 @@
 		'app.dashboard',
 		'app.home',
 		'ui.grid.selection',
-		'ui.grid.pinning'
+		'ui.grid.pinning',
+		'ui.grid.treeView'
 	]);
 })();

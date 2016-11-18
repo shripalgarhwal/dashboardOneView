@@ -518,6 +518,278 @@
           "warning": false,
           "fund": false
         }
+      },
+      {
+        "Name": "WMF Global Bond (IE) 12371 - 1",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "65",
+        "nav": "677",
+        "isin": "543",
+        "missing": ["", "567", "56", "6", "566"],
+        "children": [
+            {
+              "Name": "Share Class",
+              "currency": "",
+              "coreHoldingID": "",
+              "poe": "",
+              "nav": "6575",
+              "isin": "",
+              "visible": false              
+            },
+            {
+              "Name": "Share Class",
+              "currency": "USD 860",
+              "coreHoldingID": "56835",
+              "poe": "5654",
+              "nav": "",
+              "isin": "454",
+              "visible": false
+            }
+        ],
+        "visible": {
+          "error": false,
+          "warning": false,
+          "fund": false
+        }
+      },
+      {
+        "Name": "WMF Gbl Hlth Care - 1",
+        "currency": "USD 500",
+        "coreHoldingID": "6778",
+        "poe": "Poe",
+        "nav": "",
+        "isin": "6755",
+        "missing": ["USD 350", "6778", "56", "", "6755"],
+        "children": [
+            {
+              "Name": "Share Class",
+              "currency": "",
+              "coreHoldingID": "",
+              "poe": "456",
+              "nav": "",
+              "isin": "6564",
+              "visible": false
+            },
+            {
+              "Name": "Share Class",
+              "currency": "USD 600",
+              "coreHoldingID": "56677",
+              "poe": "",
+              "nav": "456",
+              "isin": "678",
+              "visible": false
+            }
+        ],
+        "visible": {
+          "error": false,
+          "warning": false,
+          "fund": false
+        }
+      },
+      {
+        "Name": "WMF Opp Themes - 1",
+        "currency": "USD 540",
+        "coreHoldingID": "4567",
+        "poe": "",
+        "nav": "456",
+        "isin": "567",
+        "missing": ["USD 300", "4567", "", "435", "44676"],
+        "children": [
+            {
+              "Name": "Share Class",
+              "currency": "",
+              "coreHoldingID": "6789",
+              "poe": "67",
+              "nav": "",
+              "isin": "685",
+              "visible": false
+            },
+            {
+              "Name": "Share Class",
+              "currency": "USD 8000",
+              "coreHoldingID": "",
+              "poe": "658",
+              "nav": "657",
+              "isin": "",
+              "visible": false
+            }
+        ],
+        "visible": {
+          "error": false,
+          "warning": false,
+          "fund": false
+        }
+      },
+      {
+        "Name": "WMF Gbl Credit BAM (IE) - 1",
+        "currency": "Base currency",
+        "coreHoldingID": "",
+        "poe": "645",
+        "nav": "456",
+        "isin": "7878",
+        "missing": ["USD 300", "", "456", "56", "987"],
+        "children": [
+            {
+              "Name": "Share Class",
+              "currency": "Base currency",
+              "coreHoldingID": "5678",
+              "poe": "435",
+              "nav": "45",
+              "isin": "6767",
+              "visible": false
+            },
+            {
+              "Name": "Share Class",
+              "currency": "",
+              "coreHoldingID": "",
+              "poe": "67",
+              "nav": "789",
+              "isin": "676",
+              "visible": false
+            }
+        ],
+        "visible": {
+          "error": false,
+          "warning": false,
+          "fund": false
+        }
+      },
+      {
+        "Name": "WMF Global Bond (IE) 12371 - 2",
+        "currency": "",
+        "coreHoldingID": "567",
+        "poe": "65",
+        "nav": "677",
+        "isin": "543",
+        "missing": ["", "567", "56", "6", "566"],
+        "children": [
+            {
+              "Name": "Share Class",
+              "currency": "",
+              "coreHoldingID": "",
+              "poe": "",
+              "nav": "6575",
+              "isin": "",
+              "visible": false              
+            },
+            {
+              "Name": "Share Class",
+              "currency": "USD 860",
+              "coreHoldingID": "56835",
+              "poe": "5654",
+              "nav": "",
+              "isin": "454",
+              "visible": false
+            }
+        ],
+        "visible": {
+          "error": false,
+          "warning": false,
+          "fund": false
+        }
+      },
+      {
+        "Name": "WMF Gbl Hlth Care - 2",
+        "currency": "USD 500",
+        "coreHoldingID": "6778",
+        "poe": "Poe",
+        "nav": "",
+        "isin": "6755",
+        "missing": ["USD 350", "6778", "56", "", "6755"],
+        "children": [
+            {
+              "Name": "Share Class",
+              "currency": "",
+              "coreHoldingID": "",
+              "poe": "456",
+              "nav": "",
+              "isin": "6564",
+              "visible": false
+            },
+            {
+              "Name": "Share Class",
+              "currency": "USD 600",
+              "coreHoldingID": "56677",
+              "poe": "",
+              "nav": "456",
+              "isin": "678",
+              "visible": false
+            }
+        ],
+        "visible": {
+          "error": false,
+          "warning": false,
+          "fund": false
+        }
+      },
+      {
+        "Name": "WMF Opp Themes - 2",
+        "currency": "USD 540",
+        "coreHoldingID": "4567",
+        "poe": "",
+        "nav": "456",
+        "isin": "567",
+        "missing": ["USD 300", "4567", "", "435", "44676"],
+        "children": [
+            {
+              "Name": "Share Class",
+              "currency": "",
+              "coreHoldingID": "6789",
+              "poe": "67",
+              "nav": "",
+              "isin": "685",
+              "visible": false
+            },
+            {
+              "Name": "Share Class",
+              "currency": "USD 8000",
+              "coreHoldingID": "",
+              "poe": "658",
+              "nav": "657",
+              "isin": "",
+              "visible": false
+            }
+        ],
+        "visible": {
+          "error": false,
+          "warning": false,
+          "fund": false
+        }
+      },
+      {
+        "Name": "WMF Gbl Credit BAM (IE) - 2",
+        "currency": "Base currency",
+        "coreHoldingID": "",
+        "poe": "645",
+        "nav": "456",
+        "isin": "7878",
+        "missing": ["USD 300", "", "456", "56", "987"],
+        "children": [
+            {
+              "Name": "Share Class",
+              "currency": "Base currency",
+              "coreHoldingID": "5678",
+              "poe": "435",
+              "nav": "45",
+              "isin": "6767",
+              "visible": false
+            },
+            {
+              "Name": "Share Class",
+              "currency": "",
+              "coreHoldingID": "",
+              "poe": "67",
+              "nav": "789",
+              "isin": "676",
+              "visible": false
+            }
+        ],
+        "visible": {
+          "error": false,
+          "warning": false,
+          "fund": false
+        }
       }
     ],
     "characteristics": [
