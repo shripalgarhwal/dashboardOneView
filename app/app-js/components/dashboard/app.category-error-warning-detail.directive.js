@@ -97,7 +97,32 @@
 
 
         // ---  ui-grid ------
-        var columnNames = ['Name', 'currency', 'isin', 'nav', 'coreHoldingID', 'poe'];
+        var columnNames = [
+            {
+                field: 'Name',
+                name: 'Name'
+            },
+            {
+                field: 'currency',
+                name: 'Currency'
+            },
+            {
+                field: 'isin',
+                name: 'ISIN'
+            },
+            {
+                field: 'nav',
+                name: 'NAV'
+            },
+            {
+                field: 'coreHoldingID',
+                name: 'Core Holding ID'
+            },
+            {
+                field: 'poe',
+                name: 'POE'
+            }
+        ];
         function getClassName(grid, row, col, columnName, CONSTANTS) {
             var className = '';
             //console.log('columnName::::', columnName);
@@ -137,7 +162,7 @@
                             showTreeExpandNoChildren: true,
                             columnDefs: [
                                 { 
-                                    field: columnNames[0],
+                                    field: columnNames[0].field,
                                     enablePinning: false,
                                     enableFiltering: true,
                                     menuItems: [
@@ -151,35 +176,35 @@
                                                     context: $scope
                                                   },*/
                                                   {
-                                                    title: 'Currency',
+                                                    title: columnNames[1].name,
                                                     action: function() {
-                                                        this.grid.options.data = filterInGrid(vm.selectedFundFamilly, 'currency');
+                                                        this.grid.options.data = filterInGrid(vm.selectedFundFamilly, columnNames[1].field);
                                                     }
                                                   },
                                                   {
-                                                    title: 'ISIN',
+                                                    title: columnNames[2].name,
                                                     action: function() {
                                                       //console.log('ISIN::::', this.columnName);
-                                                      this.grid.options.data = filterInGrid(vm.selectedFundFamilly, 'isin');
+                                                      this.grid.options.data = filterInGrid(vm.selectedFundFamilly, columnNames[2].field);
                                                     }
                                                   },
                                                   {
-                                                    title: 'NAV',
+                                                    title: columnNames[3].name,
                                                     action: function() {
-                                                        this.grid.options.data = filterInGrid(vm.selectedFundFamilly, 'nav');
+                                                        this.grid.options.data = filterInGrid(vm.selectedFundFamilly, columnNames[3].field);
                                                         //console.log('nav::::', this.grid.options);
                                                     }
                                                   },
                                                   {
-                                                    title: 'Core Holding Id',
+                                                    title: columnNames[4].name,
                                                     action: function() {
-                                                        this.grid.options.data = filterInGrid(vm.selectedFundFamilly, 'coreHoldingID');
+                                                        this.grid.options.data = filterInGrid(vm.selectedFundFamilly, columnNames[4].field);
                                                     }
                                                   },
                                                   {
-                                                    title: 'POE',
+                                                    title: columnNames[5].name,
                                                     action: function() {
-                                                      this.grid.options.data = filterInGrid(vm.selectedFundFamilly, 'poe');
+                                                      this.grid.options.data = filterInGrid(vm.selectedFundFamilly, columnNames[5].field);
                                                     }
                                                   },
                                                   {
@@ -197,11 +222,12 @@
                                                 ]
                                 },
                                 {
-                                    field: columnNames[1],
+                                    field: columnNames[1].field,
                                     enableFiltering: false,
-                                    enablePinning:true,
+                                    enableSorting: false,
+                                    enablePinning: false,
                                     cellClass: function(grid, row, col, rowRenderIndex, colRenderIndex) {
-                                        return 'other-cells ' + getClassName(grid, row, col, 'currency');
+                                        return 'other-cells ' + getClassName(grid, row, col, columnNames[1].field);
                                     },
                                     menuItems: [
                                         {
@@ -213,12 +239,12 @@
                                     ]
                                 },
                                 {
-                                    field: columnNames[2],
-                                    enableSorting: false, 
+                                    field: columnNames[2].field,
                                     enableFiltering: false,
-                                    enablePinning:true,
+                                    enableSorting: false,
+                                    enablePinning: false,
                                     cellClass: function(grid, row, col, rowRenderIndex, colRenderIndex) {
-                                        return 'other-cells ' + getClassName(grid, row, col, 'isin');
+                                        return 'other-cells ' + getClassName(grid, row, col, columnNames[2].field);
                                     },
                                     menuItems: [
                                         {
@@ -230,11 +256,12 @@
                                     ]
                                 },
                                 {
-                                    field: columnNames[3],
+                                    field: columnNames[3].field,
                                     enableFiltering: false,
-                                    enablePinning:true,
+                                    enableSorting: false,
+                                    enablePinning: false,
                                     cellClass: function(grid, row, col, rowRenderIndex, colRenderIndex) {
-                                        return 'other-cells ' + getClassName(grid, row, col, 'nav');
+                                        return 'other-cells ' + getClassName(grid, row, col, columnNames[3].field);
                                     },
                                     menuItems: [
                                         {
@@ -246,11 +273,12 @@
                                     ]
                                 },
                                 {
-                                    field: columnNames[4],
+                                    field: columnNames[4].field,
                                     enableFiltering: false,
-                                    enablePinning:true,
+                                    enableSorting: false,
+                                    enablePinning: false,
                                     cellClass: function(grid, row, col, rowRenderIndex, colRenderIndex) {
-                                        return 'other-cells ' + getClassName(grid, row, col, 'coreHoldingID');
+                                        return 'other-cells ' + getClassName(grid, row, col, columnNames[4].field);
                                     },
                                     menuItems: [
                                         {
@@ -262,11 +290,12 @@
                                     ]
                                 },
                                 {
-                                    field: columnNames[5],
+                                    field: columnNames[5].field,
                                     enableFiltering: false,
-                                    enablePinning:true,
+                                    enableSorting: false,
+                                    enablePinning: false,
                                     cellClass: function(grid, row, col, rowRenderIndex, colRenderIndex) {
-                                        return 'other-cells ' + getClassName(grid, row, col, 'poe');
+                                        return 'other-cells ' + getClassName(grid, row, col, columnNames[5].field);
                                     },
                                     menuItems: [
                                         {
@@ -341,7 +370,7 @@
         }
         function groupByColumnName(items, colName) {
             var firstItem = {
-                Name: colName,
+                Name: colName.name,
                 /*currency: '',
                 coreHoldingID: '',
                 poe: '',
@@ -350,7 +379,7 @@
             };
             var collectionItems = [];
             collectionItems.push(firstItem);
-            angular.forEach(filterInGrid(items, colName), function(item) {
+            angular.forEach(filterInGrid(items, colName.field), function(item) {
                 collectionItems.push(item);
             });
             collectionItems[0].$$treeLevel = 0;
